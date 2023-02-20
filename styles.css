@@ -4,28 +4,23 @@
 }
 
 .main-container {
-    height: 960px;
-    width: 960px;
+    max-height: 1000px;
+    max-width: 1000px;
 
     display: flex;
-    flex-direction: column  ;
-    justify-content: stretch;
-    flex-basis: auto;   
-    gap: 3px;
-}
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;                /* for flexbox layout only */
+    
 
-.horizontal-box {  /* gets inner-boxes aligned horizontally */
-    display: flex;
-    flex-direction: row ;
-    flex-grow: 1;
-    flex-basis: auto;
-    gap: 3px;
     
 }
-
+ 
 .inner-box {
-    height: 320px;
-    width: 320px;   
+    aspect-ratio: 1/1;
+    flex: 0 1 160px;
     background-color: beige;   
+    
     
 }
