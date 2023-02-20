@@ -1,0 +1,31 @@
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+        
+}
+
+.main-container {
+    height: 960px;
+    width: 960px;
+
+    display: flex;
+    flex-direction: column  ;
+    justify-content: stretch;
+    flex-basis: auto;   
+    gap: 3px;
+}
+
+.horizontal-box {  /* gets inner-boxes aligned horizontally */
+    display: flex;
+    flex-direction: row ;
+    flex-grow: 1;
+    flex-basis: auto;
+    gap: 3px;
+    
+}
+
+.inner-box {
+    height: 320px;
+    width: 320px;   
+    background-color: beige;   
+    
+}
