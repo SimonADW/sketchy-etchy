@@ -7,6 +7,7 @@ let mainContainer = document.getElementById('container-main');
 function numberOfColumns(nmbr) {
     for(i = 0; i < nmbr; i++) {
         mainContainer.innerHTML += `<div class="column-box" id="column-box${i}"></div>`;
+        
     }
 }
 
@@ -19,10 +20,12 @@ function numberOfBoxes(nmbr) {
     }
 }
 
-numberOfColumns(6); 
-numberOfBoxes(6);
+function createGrid(nmbr) {
+    numberOfColumns(nmbr); 
+    numberOfBoxes(nmbr);
+}
 
-
+createGrid(25);
 
 
 
