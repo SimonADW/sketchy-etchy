@@ -2,13 +2,25 @@
 
 let mainContainer = document.getElementById('container-main');
 
-function numberOfBoxes(nmbr) {
-    for(i = 0; i < nmbr*nmbr; i++) {
-mainContainer.innerHTML += `<div class="inner-box"></div>`;
+
+
+function numberOfColumns(nmbr) {
+    for(i = 0; i < nmbr; i++) {
+        mainContainer.innerHTML += `<div class="column-box" id="column-box${i}"></div>`;
     }
 }
 
-numberOfBoxes(6); 
+function numberOfBoxes(nmbr) {
+    for(i = 0; i < nmbr; i++) {
+        let columnBox = document.getElementById(`column-box${i}`);
+            for(nr = 0; nr < nmbr; nr++) {
+            columnBox.innerHTML += `<div class="inner-box" id="inner-box${nr}"></div>`;
+            }
+    }
+}
+
+numberOfColumns(6); 
+numberOfBoxes(6);
 
 
 

@@ -5,22 +5,25 @@
 
 .main-container {
     max-height: 1000px;
-    max-width: 1000px;
-
+    max-width: 980px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;                /* for flexbox layout only */
-    
-
-    
+    flex-flow: column nowrap;
+    gap: 3px;
+       
 }
  
+.main-container > div {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3px;
+    flex: 0 1 160px;
+    background-color: aqua;
+
+
+}
 .inner-box {
     aspect-ratio: 1/1;
-    flex: 0 1 160px;
     background-color: beige;   
-    
+    flex: 0 1 160px;
     
 }
