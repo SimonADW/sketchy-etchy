@@ -3,12 +3,19 @@
     
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
-    margin-left: 220px;
+    flex: 0 1 auto
+    
 }
 
 button {
-    margin-left: 280px;
+    
     margin-bottom: 10px;
     height: 45px;
     width: 220px;
@@ -26,7 +33,6 @@ button {
     flex: 0 1 auto;
     border: 1px solid rgb(243, 230, 194);
     border-radius: 10px;
-    
 
            
 }
@@ -35,6 +41,7 @@ button {
     display: flex;
     flex-flow: row nowrap;
     flex: 0 1 160px;
+    
     
     
     

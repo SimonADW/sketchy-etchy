@@ -47,7 +47,7 @@ newPadButton.addEventListener('click', () => {
     while(mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.lastChild);
     }       
-    createGrid(prompt('Enter wanted grid size: '));
+    createGrid(prompt('Enter wanted grid size (Max 100): '));
     
 });
 
