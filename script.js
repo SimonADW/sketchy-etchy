@@ -25,7 +25,24 @@ function createGrid(nmbr) {
     numberOfBoxes(nmbr);
 }
 
+
+let selectedInnerBox;
+
+mainContainer.onmouseover = function(event) {
+    let target = event.target; 
+    draw(target); 
+}
+
+
+function draw(innerBox) {
+    selectedInnerBox = innerBox;
+    selectedInnerBox.classList.add('drawn');
+}
+
+
+
 createGrid(25);
+
 
 
 
