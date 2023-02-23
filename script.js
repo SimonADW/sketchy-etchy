@@ -3,6 +3,7 @@
 let mainContainer = document.getElementById('container-main');
 
 
+// Creates drawingpad (Grid)
 
 function numberOfColumns(nmbr) {
     for(i = 0; i < nmbr; i++) {
@@ -25,6 +26,7 @@ function createGrid(nmbr) {
     numberOfBoxes(nmbr);
 }
 
+// Enables drawing function
 
 let selectedInnerBox;
 
@@ -33,15 +35,21 @@ mainContainer.onmouseover = function(event) {
     draw(target); 
 }
 
-
 function draw(innerBox) {
     selectedInnerBox = innerBox;
     selectedInnerBox.classList.add('drawn');
 }
 
+// Add "New sketchpad" button
 
-
-createGrid(25);
+let newPadButton = document.getElementById('new-grid');
+newPadButton.addEventListener('click', () => {    
+    while(mainContainer.firstChild) {
+        mainContainer.removeChild(mainContainer.lastChild);
+    }       
+    createGrid(prompt('Enter wanted grid size: '));
+    
+});
 
 
 
