@@ -51,6 +51,7 @@ newPadButton.addEventListener('click', () => {
     
 });
 
+createGrid(16);
 
 
 

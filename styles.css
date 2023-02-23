@@ -1,14 +1,33 @@
 * {
-    font-family: 'Roboto', Arial, sans-serif;
-        
+    font-family: 'Roboto', Arial, sans-serif;          
+    
+}
+
+h1 {
+    margin-left: 220px;
+}
+
+button {
+    margin-left: 280px;
+    margin-bottom: 10px;
+    height: 45px;
+    width: 220px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 25px;      
+    background-color:  rgb(243, 230, 194);
 }
 
 .main-container {
-    max-height: 780px;
-    max-width: 780px;
+    height: 780px;
+    width: 780px;
     display: flex;
     flex-flow: column nowrap;
     flex: 0 1 auto;
+    border: 1px solid rgb(243, 230, 194);
+    border-radius: 10px;
+    
+
            
 }
  
@@ -16,13 +35,14 @@
     display: flex;
     flex-flow: row nowrap;
     flex: 0 1 160px;
-    background-color: aqua;
-
+    
+    
+    
 
 }
 .inner-box {
     aspect-ratio: 1/1;
-    background-color: beige;   
+    background-color: rgb(241, 241, 241);   
     flex: 0 1 160px;
 }
 
